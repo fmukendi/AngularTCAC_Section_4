@@ -1,0 +1,15 @@
+<p>
+  template-variable works!
+</p>
+
+<input type="text"
+ (keyup.enter)="onKeyUp($event)"
+
+/>
+<br><br>
+
+<input type="text"
+#email
+ (keyup.enter)="onKeyUp2(email.value)"
+
+/>

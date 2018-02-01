@@ -18,6 +18,17 @@ import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routedComponents } from './app-routing.module';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { EventFiteringComponent } from './event-fitering/event-fitering.component';
+import { TemplateVariableComponent } from './template-variable/template-variable.component';
+import { BananaBindingComponent } from './banana-binding/banana-binding.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
+import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
     imports: [
@@ -39,7 +50,18 @@ import { AppRoutingModule, routedComponents } from './app-routing.module';
     ],
     declarations: [
         AppComponent,
-        routedComponents
+        routedComponents,
+        PropertyBindingComponent,
+        AttributeBindingComponent,
+        ClassBindingComponent,
+        StyleBindingComponent,
+        EventBindingComponent,
+        EventFiteringComponent,
+        TemplateVariableComponent,
+        BananaBindingComponent,
+        PipeComponent,
+        CustomPipesComponent,
+        SummaryPipe
     ],
     providers: [
     ],

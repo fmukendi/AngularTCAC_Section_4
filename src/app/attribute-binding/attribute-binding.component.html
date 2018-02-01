@@ -1,0 +1,15 @@
+<p>
+  attribute-binding works!
+</p>
+<img [src]="imageUrl" />
+<table>
+  <tr>
+    <td [attr.colspan] ="colSpan"></td> 
+    <br/><br/>
+  --> [colspan] do not work because colspan do not have a representation in the DOM but in HTML
+  <br/>
+  --> [textContent] have a presentation in DOM but not HTML
+  <br/>
+  --> The solution is [attr.colspan]
+  </tr>
+</table>

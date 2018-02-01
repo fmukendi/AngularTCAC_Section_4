@@ -1,0 +1,16 @@
+<p>
+  banana-binding works!
+</p>
+BAD 2 WAY BINDING 
+<br>
+<input type="text"
+[value]="email"
+(keyup.enter)="email = $event.target.value ; onKeyUp()"
+/>
+<br>
+GOOD 2 WAY BINDING 
+<br>
+<input type="text"
+[(ngModel)]="email"
+(keyup.enter)="onKeyUp()"
+/>

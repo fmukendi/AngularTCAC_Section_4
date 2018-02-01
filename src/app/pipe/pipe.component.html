@@ -1,0 +1,20 @@
+<p>
+  pipe works!
+</p>
+
+{{course.title | uppercase | lowercase }} <br>
+{{course.students | number }} <br>
+{{course.rating | number : '1.2-2'}} <br>
+{{course.price| currency}} <br>
+{{course.price| currency: 'AUD'}} <br>
+{{course.price| currency: 'AUD':true}} <br>
+{{course.price| currency: 'AUD':true:'3.2-2'}} <br>
+{{course.releaseDate}} <br>
+{{course.releaseDate | date}} <br>
+{{course.releaseDate | date: 'shortDate'}} <br>
+
+<br><br>
+
+More go to https://angular.io
+
+search for datepipe
